@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body, #root, .App, main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section1 {
+  width: 100%;
+  height: 100%;
+  background-color: #A8D0E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.section3 {
+  position: absolute;
+  top: 200%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.section4 {
+  position: absolute;
+  top: 450%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionA, .sectionB, .sectionC, .sectionD, .sectionE, .sectionF {
+  width: 50%;
+  height: 100%;
+}
+
+.sectionA {
+  background-color: #F76C6C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sectionD {
+  background-color: #24305E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.sectionDfixed {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background-color: #24305E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sectionDUnfixed {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 150%;
+  left: 50%;
+  background-color: #24305E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h4 {
+  margin: 2%;
+}
+
+.sectionC {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  height: 250%;
+}
+
+.sectionE {
+  background-color: #F8E9A1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1, .whiteH2 {
+  color: white;
+  font-size: 16pt;
+  letter-spacing: 3pt;
+}
+
+h1.projectsH1 {
+  color: white;
+}
+
+
+
+a, a:hover, a:visited {
+    color: white;
+}
+
+a.projectLink, a.contactSectionLink {
+  color: #F76C6C;
+  margin: 2%;
+}
+
+a.projectLink:hover, a.contactSectionLink:hover {
+  color: #24305E;
+}
+
+h1 {
+  font-size:56pt;
+  justify-self: center;
+}
+
+img {
+  height: 40%;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.frontend, .backend, .newcastleRefresh {
+  border-radius: 0%;
+  border: solid 2pt #24305E;
+  width: 96%;
+  height: auto;
+  
+}
+
+
+
+.links {
+  justify-self: flex-end;
+}
+
+.scrollTop {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: solid 2pt white;
+  font-size: 45pt;
+  text-align: center;
+  border-radius: 50%;
+  justify-self: flex-start;
+}
+
+.scrollBottom {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: solid 2pt white;
+  font-size: 45pt;
+  text-align: center;
+  border-radius: 50%;
+  justify-self: flex-start;
+}
+
+.scrollTop:hover {
+  width: 60px;
+  height: 60px;
+  border: solid 2pt white;
+  text-align: center;
+  border-radius: 50%;
+  justify-self: flex-start;
+}
+
+.scrollBottom:hover {
+  width: 60px;
+  height: 60px;
+  border: solid 2pt white;
+  text-align: center;
+  border-radius: 50%;
+  justify-self: flex-start;
+}
+
+#scrollA {
+  color: white;
+  background-color: #F76C6C;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#scrollA:hover {
+  background-color: white;
+  color: #F76C6C;
+}
+
+#scrollD {
+  background-color: #24305E;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#scrollD:hover {
+  background-color: white;
+  color: #24305E;
+}
+
+#scrollE {
+  color: white;
+  background-color: #F8E9A1;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#scrollE:hover {
+  background-color: white;
+  color: #F8E9A1;
+}
+
+.contactLink:hover {
+  background-color: #F8E9A1;
+}
+
+h1.contactH1, h1.projectsH1, h1.aboutH1 {
+  color: white;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+h1.contactH1 {
+  margin-top: 35%;
+}
+
+.aboutStuff {
+  color: #A8D0E6;
+  font-size: 36pt;
+  margin-top: 7.5%;
+  margin: 2%
+}
+
+.aboutLink:hover {
+  background-color: #F76C6C;
+}
+
+.projectStuff {
+  color: #A8D0E6;
+  font-size: 36pt;
+  margin: 2%; 
+}
+
+
+
+.projectsLink:hover {
+  background-color:#24305E;
+}
+
+
+p {
+  margin: 2%;
+  margin-top: 3%;
+  line-height: 1.4;}
+
+strong {
+  font-size: 110%;
+}
+
+.proj1, .proj2, .proj3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  width: 100%;
+}
