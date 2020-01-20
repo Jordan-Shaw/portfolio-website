@@ -14,14 +14,27 @@ export default function Projects(props) {
 
   return (
     <div className="section3">
-      <div className="sectionC">
+      <div className={yPositionProjects(yPos)}>
+        <span className="scrollTop" id="scrollD" onClick={scrollToTop}>⇡</span>
+        <h2 className="whiteH2">
+          Scroll to top
+        </h2>
+        <h1 className="projectsH1">
+          Projects
+        </h1>
+        <h2 className="whiteH2">
+          Contact
+        </h2>
+        <span className="scrollBottom" id="scrollD" onClick={() => { smoothScroll('contact') }}>⇣</span>
+      </div>
+      <div className="sectionD">
         <div className="proj1">
           <h3 className="projectStuff">Frontend</h3>
           <h4>Github repo:<a href="https://github.com/Jordan-Shaw/REACT-NC-News" className="projectLink">React News App</a></h4>
           <h4>Hosted version:<a href="https://nc-news-js-frontend.herokuapp.com/articles" className="projectLink">React News App</a></h4>
-          <img src={frontend} alt="frontend" className="frontend"/>
+          <img src={frontend} alt="frontend" className="frontend" />
           <p>
-            Front end created using React. Designed to emulate a news application, in the style of reddit. Associated backend is described below. 
+            Front end created using React. Designed to emulate a news application, in the style of reddit. Associated backend is described below.
           </p>
         </div>
         <div className="proj2">
@@ -36,19 +49,6 @@ export default function Projects(props) {
           <img src={newcastleRefresh} alt="newcastle-uni-site" className="newcastleRefresh" />
           <p>When acting as a Digital Team assistant for the Newcastle University Corporate Web Development team, I was responsible for using the team's CMS to build the new pages according to provided brief's and wireframes. </p>
         </div>
-      </div>
-      <div className={yPositionProjects(yPos)}>
-        <span className="scrollTop" id="scrollD" onClick={scrollToTop}>⇡</span>
-        <h2 className="whiteH2">
-          Scroll to top
-        </h2>
-        <h1 className="projectsH1">
-          Projects
-        </h1>
-        <h2 className="whiteH2">
-          Contact
-        </h2>
-        <span className="scrollBottom" id="scrollD" onClick={() => { smoothScroll('contact') }}>⇣</span>
       </div>
     </div>
   )

@@ -44,7 +44,7 @@ class App extends Component {
     } else if (position === 'contact') {
       window.scroll(
         {
-          top: 4 * this.state.windowHeight,
+          top: 4.5 * this.state.windowHeight,
           left: 0
         })
     }
@@ -59,11 +59,11 @@ class App extends Component {
 
   yPositionProjects = (yPosition) => {
     if (yPosition < 1652) {
-      return "sectionD"
+      return "sectionC"
     } else if (2892 > yPosition) {
-      return "sectionDfixed"
+      return "sectionCfixed"
     } else {
-      return "sectionDUnfixed"
+      return "sectionCUnfixed"
     }
   }
 

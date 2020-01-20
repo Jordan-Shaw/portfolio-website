@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
   margin: 0;
   padding: 0;
@@ -55,9 +57,23 @@ html {
   flex-direction: row;
 }
 
-.sectionA, .sectionB, .sectionC, .sectionD, .sectionE, .sectionF {
-  width: 50%;
+.sectionA,  .sectionC,  .sectionE {
+  width: 40%;
   height: 100%;
+}
+
+.sectionB, .sectionD {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+}
+
+.sectionF {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .sectionA {
@@ -68,21 +84,23 @@ html {
   align-items: center;
 }
 
-.sectionD {
+.sectionC {
+  position: absolute;
   background-color: #24305E;
   display: flex;
+  left: 0;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
 
-.sectionDfixed {
+.sectionCfixed {
   position: fixed;
-  width: 50%;
+  width: 40%;
   height: 100%;
   top: 0;
-  left: 50%;
+  left: 0%;
   background-color: #24305E;
   display: flex;
   flex-direction: column;
@@ -90,12 +108,12 @@ html {
   align-items: center;
 }
 
-.sectionDUnfixed {
+.sectionCUnfixed {
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 100%;
   top: 150%;
-  left: 50%;
+  left: 0;
   background-color: #24305E;
   display: flex;
   flex-direction: column;
@@ -104,12 +122,14 @@ html {
 }
 
 h4 {
-  margin: 2%;
+  margin-left: 2%;
 }
 
-.sectionC {
+.sectionD {
+  position: relative;
   display: flex;
   flex-direction: column;
+  left: 40%;
   /* justify-content: center;
   align-items: center; */
   height: 250%;
@@ -154,17 +174,16 @@ h1 {
 }
 
 img {
-  height: 40%;
+  height: 30%;
   border-radius: 50%;
-  align-self: center;
 }
 
 .frontend, .backend, .newcastleRefresh {
   border-radius: 0%;
   border: solid 2pt #24305E;
-  width: 96%;
+  width: 80%;
   height: auto;
-  
+  margin: 2%;
 }
 
 
@@ -263,10 +282,9 @@ h1.contactH1 {
   margin-top: 35%;
 }
 
-.aboutStuff {
-  color: #A8D0E6;
+h3.aboutStuff, h3.projectStuff {
+  color: black;
   font-size: 36pt;
-  margin-top: 7.5%;
   margin: 2%
 }
 
@@ -274,11 +292,11 @@ h1.contactH1 {
   background-color: #F76C6C;
 }
 
-.projectStuff {
+/* .projectStuff {
   color: #A8D0E6;
   font-size: 36pt;
   margin: 2%; 
-}
+} */
 
 
 
@@ -303,4 +321,16 @@ strong {
   align-items: flex-start;
   height: fit-content;
   width: 100%;
+}
+
+.contactStuff {
+  margin: 2%;
+  margin-left: 3%;
+  font-size: 28pt;
+}
+
+a.contactSectionLink {
+  margin: 2%;
+  margin-left: 3%;
+  font-size: 28pt;
 }

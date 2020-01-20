@@ -11,22 +11,22 @@ export default function Contact(props) {
         <h1 className="contactH1">Contact</h1>
       </div>
       <div className="sectionF">
-        <h3 className="projectStuff">
+        <h3 className="contactStuff">
           Github
         </h3>
         <a href="https://github.com/Jordan-Shaw" className="contactSectionLink">
           Jordan Shaw
         </a>
-        <h3 className="projectStuff">
+        <h3 className="contactStuff">
           Email
         </h3>
         <a href="mailto:jordan.shaw2400@gmail.com" className="contactSectionLink">
           jordan.shaw2400@gmail.com
         </a> 
-        <h3 className="projectStuff">
+        <h3 className="contactStuff">
           Mobile:
         </h3>
-        <p>
+        <p className="contactStuff">
           07739937688
         </p>
       </div>
