@@ -24,11 +24,11 @@ export default function Contact(props) {
           jordan.shaw2400@gmail.com
         </a> 
         <h3 className="contactStuff">
-          Mobile:
+          LinkedIn:
         </h3>
-        <p className="contactStuff">
-          07739937688
-        </p>
+        <a href="https://www.linkedin.com/in/jordan-shaw-2400" className="contactSectionLink">
+          Jordan Shaw
+        </a> 
       </div>
     </div>
   )

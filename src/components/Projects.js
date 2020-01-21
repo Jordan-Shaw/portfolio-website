@@ -29,20 +29,24 @@ export default function Projects(props) {
       </div>
       <div className="sectionD">
         <div className="proj1">
-          <h3 className="projectStuff">Frontend</h3>
+          <h3 className="projectStuff">Frontend project</h3>
           <h4>Github repo:<a href="https://github.com/Jordan-Shaw/REACT-NC-News" className="projectLink">React News App</a></h4>
           <h4>Hosted version:<a href="https://nc-news-js-frontend.herokuapp.com/articles" className="projectLink">React News App</a></h4>
           <img src={frontend} alt="frontend" className="frontend" />
           <p>
-            Front end created using React. Designed to emulate a news application, in the style of reddit. Associated backend is described below.
+            Mobile-responsive, single page application created using React. Designed to emulate a news application in the style of reddit, its associated backend is described below.
+          </p>
+          <p>
+            I particularly enjoyed this project. It was a fun introduction to React, and getting the parallax scrolling working correctly was a rewarding challenge. 
           </p>
         </div>
         <div className="proj2">
-          <h3 className="projectStuff">Backend</h3>
+          <h3 className="projectStuff">Backend project</h3>
           <h4>Github repo:<a href="https://github.com/Jordan-Shaw/REACT-NC-News" className="projectLink">Node.js Express News App Backend</a></h4>
           <h4>Hosted version:<a href="https://nc-news-js-frontend.herokuapp.com/articles" className="projectLink">React News App</a></h4>
           <img src={backend} alt="backend" className="backend" />
           <p>Backend for the news app described above. Available endpoints can be seen by following the link above.</p>
+          <p>This Node.js backend employs Express and Knex to serve data via a RESTful API. </p>
         </div>
         <div className="proj3">
           <h3 className="projectStuff">Newcastle Vision Refresh</h3>
