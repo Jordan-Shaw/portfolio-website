@@ -67,18 +67,22 @@ html {
   height: 100%;
 }
 
-.sectionB, .sectionD {
+.sectionB {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   height: 100%;
 }
 
 .sectionF {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
 .sectionA {
@@ -131,12 +135,14 @@ h4 {
 }
 
 .sectionD {
+  width: 60%;
+  height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   left: 40%;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: space-evenly;
+  align-items: center;
   height: 250%;
 }
 
@@ -311,8 +317,7 @@ h3.aboutStuff, h3.projectStuff {
 
 
 p {
-  margin: 2%;
-  margin-top: 3%;
+  margin-left: 2%;
   line-height: 1.4;}
 
 strong {
@@ -323,7 +328,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: fit-content;
   width: 100%;
 }

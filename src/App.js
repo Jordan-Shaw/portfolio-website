@@ -57,10 +57,14 @@ class App extends Component {
     })
   }
 
+  determineWindowHeight = () => {
+    
+  }
+
   yPositionProjects = (yPosition) => {
-    if (yPosition < 1652) {
+    if (yPosition < 2 * this.state.windowHeight) {
       return "sectionC"
-    } else if (2892 > yPosition) {
+    } else if (3.75 * this.state.windowHeight > yPosition) {
       return "sectionCfixed"
     } else {
       return "sectionCUnfixed"
