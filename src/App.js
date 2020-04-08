@@ -4,6 +4,7 @@ import "./App.css";
 import NcNewsFront from "./components/projects/NcNewsFront.js";
 import NcNewsBack from "./components/projects/NcNewsBack.js";
 import NUVisionRefresh from "./components/projects/NUVisionRefresh.js";
+import Interface from "./components/projects/Interface.js";
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <div className="App">
           <Home/>
+          <Interface height={height}/>
           <NcNewsFront height={height}/>
           <NcNewsBack height={height}/>
           <NUVisionRefresh height={height}/>

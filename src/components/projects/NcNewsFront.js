@@ -1,17 +1,17 @@
 import React from 'react'
 import frontend from "../../images/frontend.jpg";
-import ScrollMagic from 'scrollmagic'
+// import ScrollMagic from 'scrollmagic'
 
 
 export default function NcNewsFront(props) {
-  const {height} = props
-  const halfHeight = height / 2;
-  let controller = new ScrollMagic.Controller()
+  // const {height} = props
+  // const halfHeight = height / 2;
+  // let controller = new ScrollMagic.Controller()
 
-  let scene = new ScrollMagic.Scene({
-    duration: 2000,
-    offset: halfHeight
-  })
+  // let scene = new ScrollMagic.Scene({
+  //   duration: 2000,
+  //   offset: halfHeight
+  // })
 
   return (
     <div className="NcNewsFront">

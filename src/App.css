@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 html,
 body,
@@ -83,6 +83,7 @@ main {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .App {
@@ -92,22 +93,20 @@ html {
 .Home {
   width: 100vw;
   height: 100vh;
-  background-color: #f76c6c;
+  background-color: #a8d0e6;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
+  justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
-
-  #morph {
+#morph {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 0;
+  z-index: 5;
 }
 
 #morph2 {
@@ -119,15 +118,12 @@ html {
   z-index: 0;
 }
 
-.basicInfo {
+.profile {
+  height: 50%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 2%;
-  width: 96%;
-  color: #f76c6c;
-  text-transform: uppercase;
-  letter-spacing: 2pt;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   z-index: 1;
 }
 
@@ -135,25 +131,42 @@ html {
   width: 25%;
   height: auto;
   border-radius: 50%;
-  align-self: flex-start;
   margin-left: 2%;
-  border: solid #f76c6c 0.75pt;
+  opacity: 1;
+  z-index: 1;
 }
 
 .name {
-  border-top: solid #f76c6c 0.75pt;
-  border-bottom: solid #f76c6c 0.75pt;
   color: #f76c6c;
-  text-align: right;
-  width: 69%;
+  text-align: center;
+  width: 96%;
   height: min-content;
-  align-self: flex-end;
-  /* margin-top: 2%; */
-  margin-right: 2%;
-  font-size: 950%;
-  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 250%;
+  /* font-weight: 100%; */
+  letter-spacing: 5pt;
+  opacity: 0;
+  font-family: "Press Start 2P";
+}
+
+.juniorDeveloper {
+  color: white;
+  /* color: #f76c6c; */
+  text-align: center;
+  width: 75%;
+  font-size: 100%;
   letter-spacing: 5pt;
   z-index: 1;
+  opacity: 0;
+  margin-bottom: 7%;
+  font-family: "Press Start 2P";
+}
+
+#scrollDown {
+  color: #f76c6c;
+  font-family: "Press Start 2P";
+  opacity: 0;
 }
 
 .portfolio {
@@ -168,56 +181,35 @@ html {
   font-size: 850%;
   font-weight: 500;
   letter-spacing: 5pt;
-  z-index: 1;
+  opacity: 0;
 }
 
-.downArrow {
-  font-size: 850%;
-  font-weight: 500;
-  color: #f76c6c;
-  padding-top: 10%;
-  z-index: 1;
+.interface {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a8d0e6;
 }
 
 img {
   width: 50%;
 }
 
-.linksList {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 5%;
-  opacity: 1;
-}
-
-.aboutLink,
-.projectsLink,
-.contactLink {
-  padding: 3%;
-}
-
-h1 {
-  font-size: 56pt;
-  justify-self: center;
-}
-
-p {
-  /* margin-left: 2%; */
-  line-height: 1.4;
-}
-
-strong {
-  font-size: 110%;
-}
-
-.NcNewsFront {
+.projectTitle {
+  color: #f76c6c;
+  font-family: "Press Start 2P";
+  font-size: 100%;
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
+.projectText {
+  width: 50vw;
+}
+
+.projectVideo {
+  width: 50vw;
+  
+}

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import JordanShaw from "../images/JordanShaw.jpg";
-// import { Link } from "@reach/router";
 import anime from "animejs/lib/anime.es.js";
+
+// let controller = new scrollmagic.Controller();
+// let scene = new scrollmagic.Scene({triggerElement: "#scrollDown", duration: 200}).addTo(controller)
 
 export default class Introduction extends Component {
   state = {
@@ -14,49 +16,61 @@ export default class Introduction extends Component {
         <svg id="morph" viewBox="0 0 1980 1020" preserveAspectRatio="none">
           <path
             className="morph"
-            fill="#a8d0e6"
-            d="M1980 1080L1980 1080C1965.37 1258.05 1869.02 1295.47 1690.97 1192.25C1512.91 1089.03 1435.5 1100.64 1458.72 1227.09C1262.6 1469.66 1027.78 1503.2 754.24 1327.73C480.71 1152.25 229.3 1069.68 0 1080L0 1080L1980 1080Z"
+            fill="#f76c6c"
+            d="M2000 1130C2132.38 323.36 2132.38 -69.46 2000 -48.44C1867.62 -27.43 1763.53 -32.06 1687.74 -62.35C1593.8 -3.63 1511.6 -12.44 1441.14 -88.77C1335.45 -203.27 1234.16 -234.09 1000 -88.77C765.84 56.55 925.9 -313.36 780.58 -322.17C635.26 -330.97 423.88 -212.07 485.53 -124C547.18 -35.93 278.56 43.34 282.96 -124C285.89 -235.56 191.57 -194.23 0 0L0 1130L2000 1130Z"
           ></path>
         </svg>
-        <div className="basicInfo">
-          <p>Manchester, UK</p>
-          <p>jordan.shaw2400@gmail.com</p>
-        </div>
+        <img src={JordanShaw} alt="profile" className="profilePic" />
         <h1 className="name">Jordan Shaw</h1>
-        <h1 className="portfolio">Portfolio</h1>
-        {/* <img src={JordanShaw} alt="profile" className="profilePic" /> */}
-        {/* <h2>Junior Developer</h2> */}
-
-        {/* <nav className="linksList">
-          <Link to="projects" className="projectsLink">Projects</Link>
-          <Link to="about" className="aboutLink">About</Link>
-          <Link to="contact" className="contactLink">Contact</Link>
-        </nav> */}
-        <h2 className="downArrow">↓</h2>
+        <h2 className="juniorDeveloper">Junior Developer</h2>
+        <h3
+          id="scrollDown"
+          onClick={() => {
+            return console.log("clicked");
+          }}
+        >
+          ↓
+        </h3>
       </div>
     );
   }
 
   componentDidMount() {
-    anime({
+    let tl = anime.timeline({
       targets: ".morph",
+      duration: 1600
+    });
+
+    tl.add({
       d: [
-        // {
-        //   value:
-        //     "M1980 1080L1980 1080C1965.37 1258.05 1869.02 1295.47 1690.97 1192.25C1512.91 1089.03 1435.5 1100.64 1458.72 1227.09C1262.6 1469.66 1027.78 1503.2 754.24 1327.73C480.71 1152.25 229.3 1069.68 0 1080L0 1080L1980 1080Z"
-        // },
         {
           value:
-            "M1980 1080L1980 646.73C1936.98 718.99 1826.44 703.5 1648.39 600.28C1470.33 497.06 1342.6 528.03 1265.18 693.18C1247.12 878.98 1101.32 884.14 827.79 708.66C554.26 533.19 278.33 528.03 0 693.18L0 1080L1980 1080Z"
+            "M2000 1130C2132.38 848.33 2132.38 718 2000 739.01C1867.62 760.03 1789.72 653.05 1766.31 418.1C1761 303.62 1723.12 208.22 1652.66 131.89C1546.97 17.39 1494.04 355.23 1259.88 500.55C1025.71 645.87 956.12 93.29 810.8 84.48C665.47 75.67 526.62 330.02 588.27 418.1C649.92 506.17 254.38 585.44 258.78 418.1C261.72 306.53 175.46 355.5 0 565L0 1130L2000 1130Z"
         },
         {
           value:
-            "M1980 1080L1980 0C2166.59 -292.76 2170.86 -490.75 1992.81 -593.97C1814.75 -697.19 1586.15 -720.93 1307 -665.19C946.21 -544.97 629.05 -572.6 355.52 -748.07C81.98 -923.54 -36.52 -674.19 0 0L0 1080L1980 1080Z"
+            "M2000 1130C2132.38 1142.45 2132.38 1159.18 2000 1180.2C1867.62 1201.21 1763.53 1238.88 1687.74 1293.2C1593.8 1381 1511.6 1386.73 1441.14 1310.4C1335.45 1195.9 1342.95 1255.73 1108.79 1401.05C874.62 1546.37 913.81 1205.31 768.49 1196.51C623.17 1187.7 423.88 1490.4 485.53 1578.47C547.18 1666.55 278.56 1745.81 282.96 1578.47C285.89 1466.91 191.57 1350.07 0 1227.94L0 1130L2000 1130Z"
         }
       ],
       easing: "linear",
-      duration: 2000,
-      loop: false
-    });
+      loop: false,
+      duration: 3000
+    })
+      .add({
+        targets: ".name",
+        opacity: 1,
+        easing: "easeInOutExpo"
+      })
+      .add({
+        targets: ".juniorDeveloper",
+        opacity: 1,
+        easing: "easeInOutExpo"
+      })
+      .add({
+        targets: "#scrollDown",
+        delay: 500,
+        opacity: 1,
+        loop: true
+      });
   }
 }
